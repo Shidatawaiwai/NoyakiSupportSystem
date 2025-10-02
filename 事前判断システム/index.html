@@ -5,13 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width,initial-scale = 1">
         <title>事前判断システム</title>
-        <link rel="stylesheet" href="CSS/KakenPCorMobile.css">
+        <link rel="stylesheet" href="../CSS/KakenPCorMobile.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css">   <!--Leafletライブラリのcss読み込み -->
     </head>
 
     <body>
         <!-- ローディング画面用要素 -->
         <div id="Loading"></div>
+        <p class="Breadcrumbs"><a href="./../index.html">安心安全野外焼却システム</a>＞事前判断システム</p>
+        <h1>事前判断システム</h1>
         <div class="input">
             <h1>気象情報から野外焼却の延焼危険性，煤煙が広がる方向を予測</h1>
            
@@ -33,22 +35,7 @@
             <div id="manual">
                 <p>下の地図から現在位置をタップして直下にある実行ボタンを押してください</p>
                 <p><input type="button" value="実行" onclick="btnclicked()"></p>
-                <!--<p>以下の欄に打ち込んでください
-                <br>
-                現在の湿度<input type="number" max="100" min="0"  >%<br>
-                現在の風速<input type="number" min="0" >m/s<br>
-                <b>風向を選択</b><br>
                 
-                    <input type="radio" name="direction" value="north"><label for="north">北</label>
-                    <input type="radio" name="direction" value="northeast"><label for="northeast">北東</label>
-                    <input type="radio" name="direction" value="east"><label for="east">東</label>
-                    <input type="radio" name="direction" value="southeast"><label for="southeast">南東</label>
-                    <input type="radio" name="direction" value="south"><label for="south">南</label>
-                    <input type="radio" name="direction" value="southweast"><label for="southweast">南西</label>
-                    <input type="radio" name="direction" value="west"><label for="west">西</label>
-                    <input type="radio" name="direction" value="northwest"><label for="northwest">北西</label>
-                </p>
-            -->
                 <div id="inputMap"></div> 
                 
     
